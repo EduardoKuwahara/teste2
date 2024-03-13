@@ -1,6 +1,3 @@
 # Conflito
 ## Teste
- 
-- 1
-- 2
-- 4
+ arrumei a caca
