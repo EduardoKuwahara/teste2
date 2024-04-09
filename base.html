@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css')}}">
+    {% block style %}<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">{% endblock %}
+
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img src="{{ url_for('static', filename='logo (1).png')}}" alt="//Logo">
+        <span class="link">
+            <a href="/index">Home |</a>
+            <a href="/Quem Somos">Quem Somos |</a>
+            <a href="/Contatos">Contatos </a>
+        </span>
+
+    </div>
+    
+
+    {% block conteudo %}
+    {% endblock %}
+    <div class="roda">
+        Todos os direitos reservados®
+    </div>
+</body>
+</html>
